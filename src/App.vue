@@ -67,6 +67,7 @@ export default {
   computed: {
     actualValue: function() {
       this.tempValueC();
+      this.$emit("onLoad");
       if (this.type === "office") {
         return `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(
           this.tempValue
@@ -158,7 +159,7 @@ export default {
     }
   },
   render: function(h) {
-    this.$emit("onLoad");
+    
     let component = (
       <div>Prop type error, Type must be markdown/office/text/code!</div>
     );
