@@ -96,7 +96,7 @@ export default {
               self.tempValue = data;
             })
             .catch(err => {
-              this.$emit("error", "File download Failed");
+              this.$emit("onError", "File download Failed");
               console.error(err);
             });
         } else {
@@ -158,6 +158,7 @@ export default {
     }
   },
   render: function(h) {
+    this.$emit("onLoad");
     let component = (
       <div>Prop type error, Type must be markdown/office/text/code!</div>
     );
