@@ -1,2 +1,2 @@
-import VueDocPreview from './App'
-export default VueDocPreview
+import VueDocPreview from "./App";
+export default VueDocPreview;

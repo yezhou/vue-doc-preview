@@ -6,16 +6,16 @@
 
 <script>
 export default {
-  name: 'Office',
+  name: "Office",
   props: {
     value: {
       type: String,
-      default: ''
+      default: ""
     },
     height: {
       type: [String, Number],
       default: 700
     }
   }
-}
+};
 </script>
